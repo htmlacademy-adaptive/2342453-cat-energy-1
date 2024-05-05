@@ -7,37 +7,40 @@
 
   <body class="page__body">
 
-    <header class="main__header main-heder">
+    <header class="main__header main-header">
 
-      <!--Навигация-->
-      <nav class="main-header__nav">
+      <div class="container__header-container">
 
-        <!--Логотипы-->
-        <a class="main-heder__logo logo">
-          <img class="logo-picture" src="./img/logo-picture.png" width="33" height="38" alt="Логотип Cat Energy">
-          <img class="logo-text" src="./img/logo-text.png" width="101" height="18" alt="Название компании Cat Energy">
-        </a>
+        <!--Навигация-->
+        <nav class="main-header__nav">
 
-        <!--Кнопка-->
-        <button class="main-heder__toggl" type="button">
-          <span class="visualy-hidden">Открыть меню</span>
-        </button>
+          <!--Логотипы-->
+          <a class="main-header__logo logo">
+            <img class="logo__picture" src="./img/logo-picture.png" width="33" height="38" alt="Логотип Cat Energy">
+           <img class="logo__text" src="./img/logo-text.png" width="101" height="18" alt="Название компании Cat Energy">
+          </a>
 
-        <!--Меню-->
-        <ul class="main-heder__menu site-menu">
-          <li class="site-menu__item site-menu__item--active">
-            <a class="site-menu__link">Главная</a>
-          </li>
+         <!--Кнопка-->
+          <button class="main-header__toggl" type="button">
+            <span class="visualy-hidden">Открыть меню</span>
+          </button>
 
-          <li class="site-menu__item">
-            <a href="./catalog.html" class="site-menu__link">Каталог продукции</a>
-          </li>
+         <!--Меню-->
+          <ul class="main-header__menu site-menu">
+            <li class="site-menu__item site-menu__item--active">
+             <a class="site-menu__link">Главная</a>
+            </li>
 
-          <li class="site-menu__item">
-            <a href="./form.html" class="site-menu__link">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+            <li class="site-menu__item">
+              <a href="./catalog.html" class="site-menu__link">Каталог продукции</a>
+            </li>
+
+            <li class="site-menu__item">
+              <a href="./form.html" class="site-menu__link">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!--Главная-->
@@ -45,7 +48,7 @@
       <h1 class="main-page__title">Подбор программы</h1>
       <p class="main-page__title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-      <section class="main-page__section form">
+      <div class="container__form-container">
         <h2 class="visualy-hidden">Анкета покупателя</h2>
 
         <form class="form__page" method="post" action="https://echo.htmlacademy.ru/">
@@ -85,21 +88,21 @@
             <ul class="group-field__list">
               <li class="group-field__item">
                 <label class="control control--radio">
-                  <input class="control-input" name="tasks" type="radio" value="slimming" checked>
+                  <input class="control__input" name="tasks" type="radio" value="slimming" checked>
                   <span class="control__lead">Похудение</span>
                 </label>
               </li>
 
               <li class="group-field__item">
                 <label class="control control--radio">
-                  <input class="control-input" name="tasks" type="radio" value="get fat">
+                  <input class="control__input" name="tasks" type="radio" value="get fat">
                   <span class="control__lead">Набор массы</span>
                 </label>
               </li>
 
               <li class="group-field__item">
                 <label class="control control--radio">
-                  <input class="control-input" name="tasks" type="radio" value="other">
+                  <input class="control__input" name="tasks" type="radio" value="other">
                   <span class="control__lead">Не знаю (нужен ваш совет)</span>
                 </label>
               </li>
@@ -145,60 +148,62 @@
             <ul class="group-field__list">
               <li class="group-field__item">
                 <label class="control control--checkbox">
-                  <input class="control-input" name="additionally" type="checkbox" value="sweetener" checked>
+                  <input class="control__input" name="additionally" type="checkbox" value="sweetener" checked>
                   <span class="control__lead">Сахарозаменитель</span>
                 </label>
               </li>
 
               <li class="group-field__item">
                 <label class="control control--checkbox">
-                  <input class="control-input" name="additionally" type="checkbox" value="water">
+                  <input class="control__input" name="additionally" type="checkbox" value="water">
                   <span class="control__lead">Питьевая вода</span>
                 </label>
               </li>
 
               <li class="group-field__item">
                 <label class="control control--checkbox">
-                  <input class="control-input" name="additionally" type="checkbox" value="milk">
+                  <input class="control__input" name="additionally" type="checkbox" value="milk">
                   <span class="control__lead">Молоко</span>
                 </label>
               </li>
 
               <li class="group-field__item">
                 <label class="control control--checkbox">
-                  <input class="control-input" name="additionally" type="checkbox" value="vitamins">
+                  <input class="control__input" name="additionally" type="checkbox" value="vitamins">
                   <span class="control__lead">Витамины</span>
                 </label>
               </li>
             </ul>
 
-           <!--Кнопка Отправить заявку-->
-          <button class="form__button button" type="submit">Отправить заявку</button>
-
-        </fieldset>
+            <!--Кнопка Отправить заявку-->
+            <button class="form__button button" type="submit">Отправить заявку</button>
+          </fieldset>
 
           <p class="form__required fields">* - Обязательные поля</p>
         </form>
-      </section>
+      </div>
     </main>
 
     <!--Футер-->
 
-    <section class="footer-container__page-footer ">
+    <section class="footer-container__page-footer">
       <h2 class="visualy-hidden">Как нас найти</h2>
 
-      <!--Адрес-->
-      <div class="page-footer__contacts">
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="container__address-container">
+        <!--Адрес-->
+        <div class="page-footer__contacts">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+
+        <!--Карта-->
+        <div class="page-footer__map">
+          <img class="map__footer-map" src="./img/Rectangle.png" width="320" height="362" alt="Карта с отметкой">
+        </div>
       </div>
 
-      <!--Карта-->
-      <div class="page-footer__map">
-        <img class="map__footer-map" src="./img/Rectangle.png" width="320" height="362" alt="Карта с отметкой">
-      </div>
 
-      <div class="page-footer__footer social">
+      <div class="container__social-container">
 
         <!--Логотип-->
         <a class="page-footer__logo logo">
