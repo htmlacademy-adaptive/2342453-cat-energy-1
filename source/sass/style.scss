@@ -1,1 +1,32 @@
-// Начните писать стили здесь
+//Базовые стили
+@import "./base/variables.scss";
+@import "./base/mixins.scss";
+@import "./base/font.scss";
+@import "./base/global.scss";
+
+
+//Блоки
+@import "./blocks/page-header.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page.scss";
+@import "./blocks/button.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/site-menu.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/description.scss";
+@import "./blocks/offer.scss";
+@import "./blocks/form.scss";
+@import "./blocks/field.scss";
+@import "./blocks/container-proposals.scss";
+@import "./blocks/instance.scss";
+@import "./blocks/thumb.scss";
+@import "./blocks/container-address.scss";
+@import "./blocks/address-contacts.scss";
+@import "./blocks/container-social.scss";
+@import "./blocks/catalog-list.scss";
+@import "./blocks/card.scss";
+@import "./blocks/container-additional.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/card-more.scss";
+@import "./blocks/group-field.scss";
+@import "./blocks/developer.scss";

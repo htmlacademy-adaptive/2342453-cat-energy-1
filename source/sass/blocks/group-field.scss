@@ -1,0 +1,16 @@
+.group-field {
+  padding: 20px 0;
+  border: none;
+}
+
+.group-field__title {
+  font-family: $font-title;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.group-field__list {
+  padding: 0;
+  list-style: none;
+}

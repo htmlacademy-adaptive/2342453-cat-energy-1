@@ -1,0 +1,33 @@
+.instance {
+  padding: 20px;
+  background-color: $color-middle-gray;
+  list-style: none;
+}
+
+.instance__text {
+  color: $color-dark-gray;
+}
+
+.instance__list {
+  text-align: center;
+}
+
+.instance__essence {
+  color: $color-dark-gray;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: lowercase;
+}
+
+.instance__definition {
+  font-family: $font-title;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.instance__expenses {
+  font-family: $font-title;
+  line-height: 20px;
+  text-transform: uppercase;
+}

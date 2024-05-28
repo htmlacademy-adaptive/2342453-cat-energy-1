@@ -1,0 +1,24 @@
+.container-proposals {
+  padding: 20px;
+  background-color: $color-pale-gray;
+}
+
+.container-proposals__title {
+  font-family: $font-title;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.container-proposals__text {
+  color: $color-dark-gray;
+}
+
+.container-proposals__link {
+  color: $color-black;
+  font-family: $font-title;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}
