@@ -1,7 +1,14 @@
 .instance {
   padding: 20px;
   background-color: $color-middle-gray;
-  list-style: none;
+}
+
+.instance__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .instance__text {
@@ -9,7 +16,23 @@
 }
 
 .instance__list {
+  margin-top: 0;
+  margin-bottom: 34px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
   text-align: center;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-with) {
+    margin-bottom: 60px;
+    grid-column: 1 / 2;
+    gap: 42px;
+  }
 }
 
 .instance__essence {
@@ -17,6 +40,7 @@
   font-size: 12px;
   line-height: 18px;
   text-transform: lowercase;
+  list-style: none;
 }
 
 .instance__definition {
@@ -24,6 +48,7 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .instance__expenses {

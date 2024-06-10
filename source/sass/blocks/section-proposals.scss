@@ -1,0 +1,43 @@
+.section-proposals__container {
+  padding: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.proposals__item {
+  padding: 20px;
+  background-color: $color-pale-gray;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.proposals__title {
+  font-family: $font-title;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.proposals__text {
+  color: $color-dark-gray;
+}
+
+.proposals__link {
+  color: $color-black;
+  font-family: $font-title;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+}

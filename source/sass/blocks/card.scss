@@ -1,4 +1,10 @@
-.card__titel {
+.card {
+  @media (min-width: $tablet-width) {
+    background-color: $color-pale-gray;
+  }
+}
+
+.card__title {
   font-family: $font-title;
   font-size: 16px;
   font-weight: 400;
@@ -7,7 +13,7 @@
   text-decoration: none;
 }
 
-.card-data {
+.card__list {
   color: color-dark-gray;
   font-size: 12px;
 }
