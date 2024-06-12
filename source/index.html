@@ -9,26 +9,26 @@
 
   <body class="page__body">
 
-    <header class="page__header main-header">
+    <header class="page__header page-header">
 
       <!--Навигация-->
-      <nav class="main-header__nav">
-        <div class="main-header__bar">
+      <nav class="page-header__nav">
+        <div class="page-header__bar">
 
           <!--Логотипы-->
-          <a class="main-header__logo logo">
+          <a class="page-header__logo logo">
             <img class="logo__picture" src="./img/logo-picture.png" width="33" height="38" alt="Логотип Cat Energy">
             <img class="logo__text" src="./img/logo-text.png" width="101" height="18" alt="Название компании Cat Energy">
           </a>
 
           <!--Кнопка-->
-          <button class="main-header__toggle" type="button">
+          <button class="page-header__toggle" type="button">
             <span class="visualy-hidden">Открыть меню</span>
           </button>
         </div>
 
         <!--Меню-->
-        <ul class="main-header__menu site-menu">
+        <ul class="page-header__menu site-menu">
           <li class="site-menu__item site-menu__item--active">
             <a class="site-menu__link">Главная</a>
           </li>
@@ -47,18 +47,18 @@
     <!--Главная-->
     <main class="page__main page-main">
 
-      <div class="container page-main__container promo">
 
-        <!--Промо-->
-        <header class="page-main__header-promo promo">
-          <div class="promo__container container">
-            <h1 class="promo__title">Функциональное питание для котов</h1>
-            <p class="promo__slogan">Занялся собой? Займись котом!</p>
-            <img class="promo__picture" src="./img/promo-picture.png" width="280" height="270" alt="Кошачья еда Cat Energy">
-            <a class="promo__button button" href="./form.html">Подобрать программу</a>
-          </div>
-        </header>
-      </div>
+
+      <!--Промо-->
+      <header class="page-main__header-promo promo">
+        <div class="promo__container container">
+          <h1 class="promo__title">Функциональное питание для котов</h1>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <img class="promo__picture" src="./img/promo-picture.png" width="280" height="270" alt="Кошачья еда Cat Energy">
+          <a class="promo__button button" href="./form.html">Подобрать программу</a>
+        </div>
+      </header>
+
 
       <!--Предложения-->
       <section class="page-main__section proposals">
@@ -82,7 +82,7 @@
       </section>
 
 
-      <section class="container page-main__container description">
+      <section class="description">
 
         <!--Описание-->
         <div class="description__container container">
@@ -119,10 +119,10 @@
             <!--Показатели-->
             <dl class="instance__list">
               <dt class="instance__definition">5 кг</li>
-              <dt class="instance__essence">Снижение веса</li>
+              <dd class="instance__essence">Снижение веса</li>
 
               <dt class="instance__definition">60 дней</li>
-              <dt class="instance__essence">Затрачено времени</li>
+              <dd class="instance__essence">Затрачено времени</li>
             </dl>
 
             <p class="instance__expenses">Затраты на питание: 15 000 руб.</p>
@@ -162,65 +162,65 @@
           </div>
         </div>
       </section>
-
-      <!--Футер-->
-      <section class="page__footer page-footer">
-        <h2 class="visualy-hidden">Как нас найти</h2>
-
-        <div class="container page-footer__container address">
-          <!--Адрес-->
-          <div class="address__contacts">
-            <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
-            <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          </div>
-
-          <!--Карта-->
-          <div class="page-footer__map">
-            <img class="page-footer__footer-map" src="./img/Rectangle.png" width="320" height="362" alt="Карта с отметкой">
-          </div>
-        </div>
-
-
-        <div class="container page-footer__container social">
-
-          <!--Логотип-->
-          <a class="page-footer__logo logo">
-            <img class="logo-text" src="./img/logo-text.png" width="128" height="24" alt="Название компании Cat Energy">
-          </a>
-
-          <!--Соцсети-->
-          <ul class="page-footer__social social">
-
-            <!--Вконтакте-->
-            <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy_ru">
-                <img class="social__picture" src="./img/social/vkontakte.svg" width="28" height="22" alt="Вконтакте">
-              </a>
-            </li>
-
-            <!--Ютуб-->
-            <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/c/HTNLAcademyRUS">
-                <img class="social__picture" src="./img/social/youtube.svg" width="27" height="34" alt="Ютуб">
-              </a>
-            </li>
-
-            <!--Телеграмм-->
-            <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy">
-                <img class="social__picture" src="./img/social/telegram.svg" width="27" height="34" alt="Телеграмм">
-              </a>
-            </li>
-          </ul>
-
-          <div class="social__developer developer">
-            <span class="developer__text">HTML Academy</span>
-            <a class="developer__link" href="https://htmlacademy.ru">
-              <img class="developer__image" src="./img/social/htmlacademy_logo.svg" width="27" height="34" alt="Логотип HTMLAcademy">
-            </a>
-          </div>
-        </div>
-      </section>
     </main>
+
+    <!--Футер-->
+    <footer class="page__footer page-footer">
+      <h2 class="visualy-hidden">Как нас найти</h2>
+
+      <div class="page-footer__container container">
+        <!--Адрес-->
+        <div class="container__contacts contacts">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
+        </div>
+
+        <!--Карта-->
+        <div class="page-footer__map">
+          <img class="page-footer__footer-map" src="./img/Rectangle.png" width="320" height="362" alt="Карта с отметкой">
+        </div>
+
+        <!--Логотип-->
+        <a class="page-footer__logo logo logo--footer">
+          <img class="logo-text" src="./img/logo-text.png" width="128" height="24" alt="Название компании Cat Energy">
+        </a>
+
+        <!--Соцсети-->
+        <ul class="page-footer__social social">
+
+          <!--Вконтакте-->
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy_ru">
+              <img class="social__picture" src="./img/social/vkontakte.svg" width="28" height="22" alt="Вконтакте">
+            </a>
+          </li>
+
+          <!--Ютуб-->
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/c/HTNLAcademyRUS">
+              <img class="social__picture" src="./img/social/youtube.svg" width="27" height="34" alt="Ютуб">
+            </a>
+          </li>
+
+          <!--Телеграмм-->
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <img class="social__picture" src="./img/social/telegram.svg" width="27" height="34" alt="Телеграмм">
+            </a>
+          </li>
+        </ul>
+
+        <a class="page-footer__developer developer" href="https://htmlacademy.ru">
+          <span class="visualy-hidden">Разработано в</span>
+          HTML Academy
+          <a class="developer__link" >
+            <img class="developer__image" src="./img/social/htmlacademy_logo.svg" width="27" height="34" alt="Логотип HTMLAcademy">
+          </a>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

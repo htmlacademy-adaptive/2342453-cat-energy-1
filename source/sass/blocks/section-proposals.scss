@@ -29,6 +29,14 @@
   text-transform: uppercase;
 }
 
+.proposals__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .proposals__text {
   color: $color-dark-gray;
 }
