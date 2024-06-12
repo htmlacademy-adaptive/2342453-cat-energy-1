@@ -10,26 +10,26 @@
 
   <body class="page__body">
 
-    <header class="page__header main-header">
+    <header class="page__header page-header">
 
       <!--Навигация-->
-        <nav class="main-header__nav">
-          <div class="main-header__bar">
+        <nav class="page-header__nav">
+          <div class="page-header__bar">
 
             <!--Логотипы-->
-            <a class="main-header__logo logo">
+            <a class="page-header__logo logo">
               <img class="logo__picture" src="./img/logo-picture.png" width="33" height="38" alt="Логотип Cat Energy">
               <img class="logo__text" src="./img/logo-text.png" width="101" height="18" alt="Название компании Cat Energy">
             </a>
 
             <!--Кнопка-->
-            <button class="main-header__toggle" type="button">
+            <button class="page-header__toggle" type="button">
               <span class="visualy-hidden">Открыть меню</span>
             </button>
           </div>
 
           <!--Меню-->
-          <ul class="main-header__menu site-menu">
+          <ul class="page-header__menu site-menu">
             <li class="site-menu__item">
               <a href="./index.html" class="site-menu__link">Главная</a>
             </li>
@@ -190,28 +190,27 @@
     </main>
 
     <!--Футер-->
-
-    <section class="page__footer page-footer">
+    <footer class="page__footer page-footer">
       <h2 class="visualy-hidden">Как нас найти</h2>
 
-      <div class="container page-footer__container address">
+      <div class="page-footer__container container">
         <!--Адрес-->
-        <div class="address__contacts">
-          <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="container__contacts contacts">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
         </div>
 
         <!--Карта-->
         <div class="page-footer__map">
           <img class="page-footer__footer-map" src="./img/Rectangle.png" width="320" height="362" alt="Карта с отметкой">
         </div>
-      </div>
 
-
-      <div class="container page-footer__container social">
 
         <!--Логотип-->
-        <a class="page-footer__logo logo">
+        <a class="page-footer__logo logo logo--footer">
           <img class="logo-text" src="./img/logo-text.png" width="128" height="24" alt="Название компании Cat Energy">
         </a>
 
@@ -240,13 +239,14 @@
           </li>
         </ul>
 
-        <div class="social__developer developer">
-          <span class="developer__text">HTML Academy</span>
-          <a class="developer__link" href="https://htmlacademy.ru">
+        <a class="page-footer__developer developer" href="https://htmlacademy.ru">
+          <span class="visualy-hidden">Разработано в</span>
+          HTML Academy
+          <a class="developer__link" >
             <img class="developer__image" src="./img/social/htmlacademy_logo.svg" width="27" height="34" alt="Логотип HTMLAcademy">
           </a>
-        </div>
+        </a>
       </div>
-    </section>
+    </footer>
   </body>
 </html>
