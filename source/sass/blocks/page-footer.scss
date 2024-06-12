@@ -1,5 +1,30 @@
 .page-footer {
-  padding: 20px;
-
+  padding: 20px 0 22px;
   background-color: $color-pale-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 58px 0 58px;
+  }
+}
+
+.page-footer__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 164px 1fr 164px;
+    gap: 16px;
+  }
+}
+
+.page-footer__logo {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 22px;
+  }
+}
+
+.page-footer__social {
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 22px;
+  }
 }

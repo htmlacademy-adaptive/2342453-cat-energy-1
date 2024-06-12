@@ -1,0 +1,23 @@
+.social {
+  padding: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.social__item {
+  margin: 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+.social__link {
+  display: block;
+  padding: 8px;
+  color: $color-classic-gray;
+}

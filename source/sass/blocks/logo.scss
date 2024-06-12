@@ -1,0 +1,11 @@
+.logo {
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    grid-template-columns: 31px 1fr;
+    gap: 16px;
+  }
+}
+
+.logo__text {
+  justify-self: center;
+}

@@ -3,6 +3,23 @@
 }
 
 .description__list {
+  padding: 0;
   color: $color-dark-gray;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.description__item {
+  @media (max-width: $mobile-width-only) {
+    margin-top: 20px;
+  }
 }

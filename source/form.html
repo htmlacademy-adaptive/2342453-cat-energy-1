@@ -2,33 +2,34 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CAT ENERGY Функциональное питание для котов</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
 
   <body class="page__body">
 
-    <header class="page__header main-header">
+    <header class="page__header page-header">
 
-      <div class="container main-header__container">
+      <!--Навигация-->
+        <nav class="page-header__nav">
+          <div class="page-header__bar">
 
-        <!--Навигация-->
-        <nav class="main-header__nav">
+            <!--Логотипы-->
+            <a class="page-header__logo logo">
+              <img class="logo__picture" src="./img/logo-picture.png" width="33" height="38" alt="Логотип Cat Energy">
+              <img class="logo__text" src="./img/logo-text.png" width="101" height="18" alt="Название компании Cat Energy">
+            </a>
 
-          <!--Логотипы-->
-          <a class="main-header__logo logo">
-            <img class="logo__picture" src="./img/logo-picture.png" width="33" height="38" alt="Логотип Cat Energy">
-            <img class="logo__text" src="./img/logo-text.png" width="101" height="18" alt="Название компании Cat Energy">
-          </a>
-
-          <!--Кнопка-->
-          <button class="main-header__toggl" type="button">
-            <span class="visualy-hidden">Открыть меню</span>
-          </button>
+            <!--Кнопка-->
+            <button class="page-header__toggle" type="button">
+              <span class="visualy-hidden">Открыть меню</span>
+            </button>
+          </div>
 
           <!--Меню-->
-          <ul class="main-header__menu site-menu">
-            <li class="site-menu__item site-menu__item--active">
+          <ul class="page-header__menu site-menu">
+            <li class="site-menu__item">
               <a href="./index.html" class="site-menu__link">Главная</a>
             </li>
 
@@ -41,21 +42,22 @@
             </li>
           </ul>
         </nav>
-      </div>
-    </header>
+      </header>
 
     <!--Главная-->
     <main class="page__main page-main">
-      <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <header class="page-main__header container">
+        <h1 class="page-main__title">Подбор программы</h1>
+        <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </header>
 
-      <div class="container page-main__container form">
+      <section class="page-main__section form">
         <h2 class="visualy-hidden">Анкета покупателя</h2>
 
-        <form class="page-main form" method="post" action="https://echo.htmlacademy.ru/">
+        <form class="form__container container" method="post" action="https://echo.htmlacademy.ru/">
 
           <!--О коте-->
-          <fieldset class="form__fieldset group-field">
+          <fieldset class="form__group form__group--pet group-field">
             <legend class="visualy-hidden">О питомце</legend>
 
             <ul class="group-field__list">
@@ -83,7 +85,7 @@
           </fieldset>
 
           <!--Задачи-->
-          <fieldset class="form__fieldset group-field">
+          <fieldset class="form__group form__group--target group-field">
             <legend class="visualy-hidden">Задачи</legend>
 
             <ul class="group-field__list">
@@ -111,10 +113,10 @@
           </fieldset>
 
           <!--О владельце-->
-          <fieldset class="form__fieldset group-field">
+          <fieldset class="form__group form__group--contacts group-field">
             <legend class="group-field__title">Контактные данные (владельца кота)</legend>
 
-            <ul class="group-field__list">
+            <ul class="group-field__list group-field__list--contacts">
               <li class="group-field__item">
                 <label class="field">
                   <span class="field__lead">E-mail:*</span>
@@ -132,7 +134,7 @@
           </fieldset>
 
           <!--Комментарий-->
-          <fieldset class="form__fieldset group-field">
+          <fieldset class="form__group form__group--comment group-field">
             <legend class="visualy-hidden">Комментарий</legend>
             <h2 class="group-field__title">Комментарий</h2>
 
@@ -142,14 +144,14 @@
           </fieldset>
 
           <!--Дополнительно-->
-          <fieldset class="form__fieldset group-field">
+          <fieldset class="form__group form__group--additional group-field">
             <legend class="visualy-hidden">Дополнительно</legend>
             <h2 class="group-field__title">Дополнительно</h2>
 
-            <ul class="group-field__list">
+            <ul class="group-field__list group-field__list--additional">
               <li class="group-field__item">
                 <label class="control control--checkbox">
-                  <input class="control__input" name="additionally" type="checkbox" value="sweetener" checked>
+                  <input class="control__input" name="additionall" type="checkbox" value="sweetener" checked>
                   <span class="control__lead">Сахарозаменитель</span>
                 </label>
               </li>
@@ -175,39 +177,39 @@
                 </label>
               </li>
             </ul>
-
-            <!--Кнопка Отправить заявку-->
-            <button class="form__button button" type="submit">Отправить заявку</button>
           </fieldset>
 
-          <p class="form__required fields">* - Обязательные поля</p>
+          <!--Кнопка Отправить заявку-->
+          <div class="form__footer">
+            <button class="form__button button" type="submit">Отправить заявку</button>
+            <p class="form__required fields">* - Обязательные поля</p>
+          </div>
         </form>
-      </div>
+      </section>
     </main>
 
     <!--Футер-->
-
-    <section class="page__footer page-footer">
+    <footer class="page__footer page-footer">
       <h2 class="visualy-hidden">Как нас найти</h2>
 
-      <div class="container page-footer__container address">
+      <div class="page-footer__container container">
         <!--Адрес-->
-        <div class="address__contacts">
-          <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="container__contacts contacts">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
         </div>
 
         <!--Карта-->
         <div class="page-footer__map">
           <img class="page-footer__footer-map" src="./img/Rectangle.png" width="320" height="362" alt="Карта с отметкой">
         </div>
-      </div>
 
-
-      <div class="container page-footer__container social">
 
         <!--Логотип-->
-        <a class="page-footer__logo logo">
+        <a class="page-footer__logo logo logo--footer">
           <img class="logo-text" src="./img/logo-text.png" width="128" height="24" alt="Название компании Cat Energy">
         </a>
 
@@ -236,13 +238,14 @@
           </li>
         </ul>
 
-        <div class="social__developer developer">
-          <span class="developer__text">HTML Academy</span>
-          <a class="developer__link" href="https://htmlacademy.ru">
+        <a class="page-footer__developer developer" href="https://htmlacademy.ru">
+          <span class="visualy-hidden">Разработано в</span>
+          HTML Academy
+          <a class="developer__link" >
             <img class="developer__image" src="./img/social/htmlacademy_logo.svg" width="27" height="34" alt="Логотип HTMLAcademy">
           </a>
-        </div>
+        </a>
       </div>
-    </section>
+    </footer>
   </body>
 </html>

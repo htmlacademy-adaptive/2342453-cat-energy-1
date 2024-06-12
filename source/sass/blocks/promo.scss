@@ -5,6 +5,18 @@
   background-image: url("../img/background/promo.jpg");
   background-repeat: no-repeat;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: $color-black;
+    background-color: transparent;
+    text-align: center;
+  }
+}
+
+.promo__container {
+  @media (min-width: $tablet-width) {
+    padding-left: 90px;
+  }
 }
 
 .promo__title {
