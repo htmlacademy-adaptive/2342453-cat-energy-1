@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CAT ENERGY Функциональное питание для котов</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/2342453-cat-energy-1/7/">
+</head>
+
+  <body class="page__body">
+
+    <header class="page__header page-header">
+
+      <!--Навигация-->
+        <nav class="page-header__nav page-header__nav--main">
+          <div class="page-header__bar">
+
+            <!--Логотипы-->
+            <a class="page-header__logo logo">
+              <img class="logo__picture" src="./img/logo-picture.png" width="33" height="38" alt="Логотип Cat Energy">
+              <img class="logo__text" src="./img/logo-text.png" width="101" height="18" alt="Название компании Cat Energy">
+            </a>
+
+            <!--Кнопка-->
+            <button class="page-header__toggle" type="button">
+              <span class="visualy-hidden">Открыть меню</span>
+            </button>
+          </div>
+
+          <!--Меню-->
+          <ul class="page-header__menu site-menu site-menu--main">
+            <li class="site-menu__item">
+              <a href="./index.html" class="site-menu__link">Главная</a>
+            </li>
+
+            <li class="site-menu__item">
+              <a href="./catalog.html" class="site-menu__link">Каталог продукции</a>
+            </li>
+
+            <li class="site-menu__item site-menu__item--active">
+              <a class="site-menu__link">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+    <!--Главная-->
+    <main class="page__main page-main">
+      <header class="page-main__header container">
+        <h1 class="page-main__title">Подбор программы</h1>
+        <p class="page-main__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </header>
+
+      <section class="page-main__section form">
+        <h2 class="visualy-hidden">Анкета покупателя</h2>
+
+        <form class="form__container container" method="post" action="https://echo.htmlacademy.ru/">
+
+          <!--О коте-->
+          <fieldset class="form__group form__group--pet group-field">
+            <legend class="visualy-hidden">О питомце</legend>
+
+            <ul class="group-field__list">
+              <li class="group-field__item">
+                <label class="field">
+                  <span class="field__lead">Имя:*</span>
+                  <input class="field__input" name="cat-name" type="text" placeholder="Барсик" required>
+                </label>
+              </li>
+
+              <li class="group-field__item">
+                <label class="field">
+                  <span class="field__lead">Вес (кг):*</span>
+                  <input class="field__input" name="cat-weight" type="text" placeholder="7" required>
+                </label>
+              </li>
+
+              <li class="group-field__item">
+                <label class="field">
+                  <span class="field__lead">Возраст (лет):</span>
+                  <input class="field__input" name="cat-age" type="text" placeholder="7">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!--Задачи-->
+          <fieldset class="form__group form__group--target group-field">
+            <legend class="visualy-hidden">Задачи</legend>
+
+            <ul class="group-field__list">
+              <li class="group-field__item">
+                <label class="control control--radio">
+                  <input class="control__input" name="tasks" type="radio" value="slimming" checked>
+                  <span class="control__lead">Похудение</span>
+                </label>
+              </li>
+
+              <li class="group-field__item">
+                <label class="control control--radio">
+                  <input class="control__input" name="tasks" type="radio" value="get fat">
+                  <span class="control__lead">Набор массы</span>
+                </label>
+              </li>
+
+              <li class="group-field__item">
+                <label class="control control--radio">
+                  <input class="control__input" name="tasks" type="radio" value="other">
+                  <span class="control__lead">Не знаю (нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!--О владельце-->
+          <fieldset class="form__group form__group--contacts group-field">
+            <legend class="group-field__title">Контактные данные (владельца кота)</legend>
+
+            <ul class="group-field__list group-field__list--contacts">
+              <li class="group-field__item">
+                <label class="field">
+                  <span class="field__lead">E-mail:*</span>
+                  <input class="field__input" name="e-mail" type="email" placeholder="kuklachev@gmail.com" required>
+                </label>
+              </li>
+
+              <li class="group-field__item">
+                <label class="field">
+                  <span class="field__lead">Телефон:*</span>
+                  <input class="field__input" name="phone" type="tel" placeholder="8 (960) 900-60-90" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!--Комментарий-->
+          <fieldset class="form__group form__group--comment group-field">
+            <legend class="visualy-hidden">Комментарий</legend>
+            <h2 class="group-field__title">Комментарий</h2>
+
+            <div class="field">
+              <textarea class="field__input" name="comment" id="comment" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+          </fieldset>
+
+          <!--Дополнительно-->
+          <fieldset class="form__group form__group--additional group-field">
+            <legend class="visualy-hidden">Дополнительно</legend>
+            <h2 class="group-field__title">Дополнительно</h2>
+
+            <ul class="group-field__list group-field__list--additional">
+              <li class="group-field__item">
+                <label class="control control--checkbox">
+                  <input class="control__input" name="additionall" type="checkbox" value="sweetener" checked>
+                  <span class="control__lead">Сахарозаменитель</span>
+                </label>
+              </li>
+
+              <li class="group-field__item">
+                <label class="control control--checkbox">
+                  <input class="control__input" name="additionally" type="checkbox" value="water">
+                  <span class="control__lead">Питьевая вода</span>
+                </label>
+              </li>
+
+              <li class="group-field__item">
+                <label class="control control--checkbox">
+                  <input class="control__input" name="additionally" type="checkbox" value="milk">
+                  <span class="control__lead">Молоко</span>
+                </label>
+              </li>
+
+              <li class="group-field__item">
+                <label class="control control--checkbox">
+                  <input class="control__input" name="additionally" type="checkbox" value="vitamins">
+                  <span class="control__lead">Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!--Кнопка Отправить заявку-->
+          <div class="form__footer">
+            <button class="form__button button button--large" type="submit">Отправить заявку</button>
+            <p class="form__required fields">* - Обязательные поля</p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!--Футер-->
+    <footer class="page__footer page-footer">
+      <h2 class="visualy-hidden">Как нас найти</h2>
+
+      <div class="page-footer__container container">
+        <!--Адрес-->
+        <div class="container__contacts contacts">
+          <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
+        </div>
+
+        <!--Карта-->
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad224644410c55b2ed14431db75f96f5f9b20f7bae6f613c488ede772f53925b8&amp;source=constructor"></iframe>
+
+
+        <!--Логотип-->
+        <a class="page-footer__logo logo logo--footer">
+          <img class="logo-text" src="./img/logo-text.png" width="128" height="24" alt="Название компании Cat Energy">
+        </a>
+
+        <!--Соцсети-->
+        <ul class="page-footer__social social">
+
+          <!--Вконтакте-->
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy_ru">
+              <img class="social__picture" src="./img/social/vkontakte.svg" width="28" height="22" alt="Вконтакте">
+            </a>
+          </li>
+
+          <!--Ютуб-->
+          <li class="social__item">
+            <a class="social__link" href="https://www.youtube.com/c/HTNLAcademyRUS">
+              <img class="social__picture" src="./img/social/youtube.svg" width="27" height="34" alt="Ютуб">
+            </a>
+          </li>
+
+          <!--Телеграмм-->
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <img class="social__picture" src="./img/social/telegram.svg" width="27" height="34" alt="Телеграмм">
+            </a>
+          </li>
+        </ul>
+
+        <a class="page-footer__developer developer" href="https://htmlacademy.ru">
+          <span class="visualy-hidden">Разработано в</span>
+          HTML Academy
+          <a class="developer__link" >
+            <img class="developer__image" src="./img/social/htmlacademy_logo.svg" width="27" height="34" alt="Логотип HTMLAcademy">
+          </a>
+        </a>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
