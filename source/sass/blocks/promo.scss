@@ -1,35 +1,105 @@
 .promo {
-  padding: 20px;
-  color: $color-white;
-  background-color: $color-green;
-  background-image: url("../img/background/promo.jpg");
-  background-repeat: no-repeat;
+  padding-top: 27px;
   text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    color: $color-white;
+    background-color: $color-dark-green;
+    background-position: 50% 0;
+    background-image: url("../img/background/index-can-mobile.svg"), linear-gradient($color-dark-green 0, $color-dark-green 302px, $color-white 302px);
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: $tablet-width) {
     color: $color-black;
     background-color: transparent;
-    text-align: center;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -200px;
+      right: 0;
+      bottom: 0;
+      left: 50%;
+      z-index: -2;
+
+      background-color: $color-dark-green;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      background-image: url("../img/background/index-can-desktop.svg");
+    }
   }
 }
 
 .promo__container {
   @media (min-width: $tablet-width) {
-    padding-left: 90px;
+    position: relative;
+    padding-left: 0 90px 526px;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding: 20px 610px 95px 80px;
   }
 }
 
 .promo__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-family: $font-title;
   font-size: 36px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 1;
+
+  @media (min-width: tablet-width) {
+    margin-bottom: 41px;
+    font-size: 60px;
+  }
 }
 
 .promo__slogan {
+  margin: 0;
+  margin-bottom: 29px;
   font-family: $font-title;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
+  line-height: 1;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+    font-size: 20px;
+  }
+}
+
+.promo__picture {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 708px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 30px;
+    left: calc(50% - 162px);
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.promo__button {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    justify-self: start;
+  }
 }

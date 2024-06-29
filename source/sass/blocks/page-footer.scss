@@ -26,5 +26,8 @@
 
   @media (max-width: $mobile-width-only) {
     margin-bottom: 22px;
+
+    border-top: 1px solid $color-other-light-gray;
+    border-bottom: 1px solid $color-other-light-gray;
   }
 }
