@@ -12,7 +12,7 @@
     <header class="page__header page-header">
 
       <!--Навигация-->
-      <nav class="page-header__nav">
+      <nav class="page-header__nav page-header__nav--main">
         <div class="page-header__bar">
 
           <!--Логотипы-->
@@ -28,7 +28,7 @@
         </div>
 
         <!--Меню-->
-        <ul class="page-header__menu site-menu">
+        <ul class="page-header__menu site-menu site-menu--main">
           <li class="site-menu__item">
             <a href="./index.html" class="site-menu__link">Главная</a>
           </li>
@@ -75,7 +75,7 @@
                 <dd class="card__magnitude">700 р</dd>
               </dl>
 
-              <a class="card__button button" href="#">Заказать</a>
+              <a class="card__button button button--fixed" href="#">Заказать</a>
             </article>
 
           <!--2-->
@@ -98,7 +98,7 @@
               <dd class="card__magnitude">1000 р</dd>
             </dl>
 
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--fixed" href="#">Заказать</a>
           </article>
 
           <!--3-->
@@ -122,7 +122,7 @@
               <dd class="card__magnitude">700 р</dd>
             </dl>
 
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--fixed" href="#">Заказать</a>
           </article>
 
           <!--4-->
@@ -144,7 +144,7 @@
               <dd class="card__magnitude">1000 р</dd>
             </dl>
 
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--fixed" href="#">Заказать</a>
           </article>
 
           <!--5-->
@@ -166,7 +166,7 @@
               <dd class="card__magnitude">400 р</dd>
             </dl>
 
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--fixed" href="#">Заказать</a>
           </article>
 
           <!--6-->
@@ -188,7 +188,7 @@
               <dd class="card__magnitude">700 р</dd>
             </dl>
 
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--fixed" href="#">Заказать</a>
           </article>
 
           <!--7-->
@@ -210,14 +210,14 @@
               <dd class="card__magnitude">500 р</dd>
             </dl>
 
-            <a class="card__button button" href="#">Заказать</a>
+            <a class="card__button button button--fixed" href="#">Заказать</a>
           </article>
 
           <!--Больше товаров-->
-          <div class="catalog-list__item more-product">
+          <div class="catalog-list__item catalog-list__item--more-product more-product">
             <h3 class="more-product__title">Показать еще 100500 товаров</h3>
             <p class="more-product__text">На самом деле вкусов гораздо больше!</p>
-            <a class="more-product__button button-secondary" href="#">Показать все</a>
+            <a class="more-product__button button--fixed button-secondary" href="#">Показать все</a>
           </div>
       </section>
 
@@ -239,7 +239,7 @@
                 <dt class="visualy-hidden">Цена</dt>
                 <dd class="card-more__text">200 р</dd>
               </dl>
-              <a class="card-more__button button" href="#">Заказать</a>
+              <a class="card-more__button button button--fixed" href="#">Заказать</a>
             </li>
 
             <!--2-->
@@ -254,7 +254,7 @@
                 <dd class="card-more__text">50 р</dd>
               </dl>
 
-              <a class="card-more__button button" href="#">Заказать</a>
+              <a class="card-more__button button button--fixed" href="#">Заказать</a>
             </li>
 
             <!--3-->
@@ -269,7 +269,7 @@
                 <dd class="card-more__text">100 р</dd>
               </dl>
 
-              <a class="card-more__button button" href="#">Заказать</a>
+              <a class="card-more__button button button--fixed" href="#">Заказать</a>
             </li>
 
             <!--4-->
@@ -284,7 +284,7 @@
                 <dd class="card-more__text">300 р</dd>
               </dl>
 
-              <a class="card-more__button button" href="#">Заказать</a>
+              <a class="card-more__button button button--fixed" href="#">Заказать</a>
             </li>
           </ul>
 
@@ -312,9 +312,7 @@
         </div>
 
         <!--Карта-->
-        <div class="page-footer__map">
-          <img class="page-footer__footer-map" src="./img/Rectangle.png" width="320" height="362" alt="Карта с отметкой">
-        </div>
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad224644410c55b2ed14431db75f96f5f9b20f7bae6f613c488ede772f53925b8&amp;source=constructor"></iframe>
 
 
         <!--Логотип-->
@@ -356,5 +354,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>

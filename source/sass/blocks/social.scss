@@ -20,4 +20,16 @@
   display: block;
   padding: 8px;
   color: $color-classic-gray;
+
+  &:hover {
+    color: $color-green;
+  }
+
+  &:active {
+    color: rgba($color-green, 0.3);
+  }
+
+  svg {
+    display: block;
+  }
 }

@@ -1,5 +1,9 @@
 .catalog-list {
-  padding: 20px 0;
+  overflow: hidden;
+
+  @media (min-width: $mobile-width-only) {
+    border-bottom: 1px solid $color-middle-gray;
+  }
 }
 
 .catalog-list__container {
@@ -11,6 +15,29 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
     row-gap: 64px;
+  }
+}
+
+.catalog-list__item {
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc(50% - 50vw);
+      width: 100vw;
+      height: 1px;
+      background-color: $color-middle-gray;
+    }
+  }
+}
+
+.catalog-list__item--more-product {
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
   }
 }

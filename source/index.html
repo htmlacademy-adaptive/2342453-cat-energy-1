@@ -12,7 +12,7 @@
     <header class="page__header page-header">
 
       <!--Навигация-->
-      <nav class="page-header__nav">
+      <nav class="page-header__nav page-header__nav--main">
         <div class="page-header__bar">
 
           <!--Логотипы-->
@@ -28,7 +28,7 @@
         </div>
 
         <!--Меню-->
-        <ul class="page-header__menu site-menu">
+        <ul class="page-header__menu site-menu site-menu--main">
           <li class="site-menu__item site-menu__item--active">
             <a class="site-menu__link">Главная</a>
           </li>
@@ -47,14 +47,12 @@
     <!--Главная-->
     <main class="page__main page-main">
 
-
-
       <!--Промо-->
       <header class="page-main__header-promo promo">
         <div class="promo__container container">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <img class="promo__picture" src="./img/promo-picture.png" width="280" height="270" alt="Кошачья еда Cat Energy">
+          <img class="promo__picture" src="./img/index-can-mobile.png" width="280" height="270" alt="Кошачья еда Cat Energy">
           <a class="promo__button button" href="./form.html">Подобрать программу</a>
         </div>
       </header>
@@ -67,14 +65,14 @@
 
           <!--Похудение-->
           <div class="section proposals__item">
-            <h3 class="section proposals__title">Похудение</h3>
+            <h3 class="section proposals__title section-proposals__title--slim">Похудение</h3>
             <p class="section proposals__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="section proposals__link" href="#">Каталог Slim</a>
           </div>
 
           <!--Набор массы-->
           <div class="section proposals__item">
-            <h3 class="section proposals__title">Набор массы</h3>
+            <h3 class="section proposals__title section-proposals__title--pro">Набор массы</h3>
             <p class="section proposals__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="section proposals__link" href="#">Каталог Pro</a>
           </div>
@@ -89,19 +87,19 @@
           <h2 class="description__title">Как это работает</h2>
 
           <ol class="description__list">
-            <li class="description__item description__item--icon-benefit">
+            <li class="description__item description__item--benefit">
               Функциональное питание содержит только полезные питательные вещества.
             </li>
 
-            <li class="description__item description__item--icon-instruction">
+            <li class="description__item description__item--instruction">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </li>
 
-            <li class="description__item description__item--icon-advice">
+            <li class="description__item description__item--advice">
               Замените один-два приема обычной еды на наше функциональное питание.
             </li>
 
-            <li class="description__item description__item--icon-summation">
+            <li class="description__item description__item--summation">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </li>
           </ol>
@@ -118,47 +116,45 @@
 
             <!--Показатели-->
             <dl class="instance__list">
-              <dt class="instance__definition">5 кг</li>
-              <dd class="instance__essence">Снижение веса</li>
+              <div class="instance__item">
+                <dt class="instance__definition">5 кг</li>
+                <dd class="instance__essence">Снижение веса</li>
+              </div>
 
-              <dt class="instance__definition">60 дней</li>
-              <dd class="instance__essence">Затрачено времени</li>
+              <div>
+                <dt class="instance__definition">60 дней</li>
+                <dd class="instance__essence">Затрачено времени</li>
+                </div>
             </dl>
 
-            <p class="instance__expenses">Затраты на питание: 15 000 руб.</p>
+            <p class="instance__expenses">
+              <span>Затраты на питание:</span>
+              <span>15&nbsp;000&nbsp;руб.</span>
+            </p>
           </div>
 
           <!--Слайдер было-стало-->
-          <div class="instance__container-slider slider">
+          <div class="instance__view">
+
             <!--Левая картинка. Было-->
-            <span class="slider__viev-before">
-              <img class="slider__picture" src="./img/cat-before-mobile.png" width="280" height="256" alt="Толстый кот">
-            </span>
+            <div class="instance__images">
+              <div class="instance__picture instance--before instance__picture--active">
+                <img src="./img/cat-before-mobile.png" width="280" height="256" alt="Толстый кот">
+              </div>
 
-            <!--Кнопка Было-->
-            <button class="slider__thumb" type="button">
-              <span class="visualy-hidden">Было</span>
-            </button>
+              <!--Правая картинка. Стало-->
+              <div class="instance__picture instance__picture--after">
+                <img src="./img/cat-after-mobile.png" width="280" height="256" alt="Тощий кот">
+              </div>
+            </div>
 
-            <!--Ползунок-->
-            <span class="slider__vertical">
-              <img class="slider__picture" src="./img/slider-vertical.png" width="4" height="257" alt="Вертикальный ползунок">
-            </span>
-
-            <!--Кругляш-->
-            <span class="slider__thumb">
-              <img class="slider__picture" src="./img/thumb.png" width="40" height="40" alt="Кругляш ползунка">
-            </span>
-
-            <!--Кнопка Стало-->
-            <button class="slider__thumb" type="button">
-              <span class="visualy-hidden">Стало</span>
-            </button>
-
-            <!--Правая картинка. Стало-->
-            <span class="slider__viev-after">
-              <img class="slider__picture" src="./img/cat-after-mobile.png" width="280" height="256" alt="Тощий кот">
-            </span>
+            <!--Кнопка слайдера-->
+            <div class="instance__thumb thumb thumb--before">
+              <button class="thumb__button" type="button">Было</button>
+              <div class="thumb__toggler"></div>
+              <input class="thumb__bar" type="range" value="50" min="17" max="83">
+              <button class="thumb__button" type="button">Стало</button>
+            </div>
           </div>
         </div>
       </section>
@@ -179,9 +175,7 @@
         </div>
 
         <!--Карта-->
-        <div class="page-footer__map">
-          <img class="page-footer__footer-map" src="./img/Rectangle.png" width="320" height="362" alt="Карта с отметкой">
-        </div>
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad224644410c55b2ed14431db75f96f5f9b20f7bae6f613c488ede772f53925b8&amp;source=constructor"></iframe>
 
         <!--Логотип-->
         <a class="page-footer__logo logo logo--footer">
@@ -222,5 +216,7 @@
         </a>
       </div>
     </footer>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
