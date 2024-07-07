@@ -1,14 +1,29 @@
+.page-main__header {
+  padding: 28px 0 40px;
+}
+
 .page-main__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-family: $font-title;
   font-size: 36px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .page-main__subtitle {
   font-family: $font-title;
   font-weight: 400;
-  font-size: 14px;
-  list-style: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

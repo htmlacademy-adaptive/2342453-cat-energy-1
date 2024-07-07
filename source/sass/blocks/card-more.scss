@@ -9,22 +9,22 @@
     row-gap: 20px;
   }
 
-  @media (min-width: desktop-width) {
+  @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 80px 1fr 80px 1fr;
     column-gap: 0;
-    align-items: center;
     padding: 13px 0;
   }
 }
 
 .card-more__title {
+  margin: 0;
+  margin-bottom: 13px;
   color: color-almost-black;
   font-family: $font-title;
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
   text-transform: uppercase;
-  list-style: none;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -38,7 +38,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 8px;
-  color: $color-dark-gray;
+  color: $color-slightly-darker;
   line-height: 1;
 
   @media (min-width: $tablet-width) {
@@ -53,6 +53,11 @@
 
 .card-more__text {
   margin: 0;
+  color: $color-dark-gray;
+
+  &:last-child {
+    text-align: right;
+  }
 
   @media (min-width: $tablet-width) {
     text-align: right;
@@ -61,6 +66,10 @@
   @media (min-width: $desktop-width) {
     padding-right: 12px;
     text-align: left;
+
+    &:last-child {
+      text-align: left;
+    }
   }
 }
 
