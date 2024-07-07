@@ -23,7 +23,7 @@
     }
   }
 
-  @media (min-width: desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-bottom: 86px;
   }
 }

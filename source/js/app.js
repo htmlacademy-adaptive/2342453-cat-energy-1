@@ -1,5 +1,5 @@
 const navElement = document.querySelector('.page-header__nav');
-const buttonElement = document.querySelector('.page-header__toggl');
+const buttonElement = document.querySelector('.page-header__toggle');
 
 navElement.classList.add('page-header__nav--closed');
 

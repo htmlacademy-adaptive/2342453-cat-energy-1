@@ -1,17 +1,18 @@
-.group-field {
+.field-group {
   padding: 20px 0;
   border: none;
 }
 
-.group-field--target {
+.field-group--target {
   padding: 21px;
+  padding-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     padding: 25px;
   }
 }
 
-.group-field__title {
+.field-group__title {
   margin-bottom: 35px;
   padding: 0;
   display: flex;
@@ -36,15 +37,21 @@
     z-index: 1;
     width: min-content;
     margin-left: -22px;
+    padding: 0 22px;
     background-color: $color-white;
   }
 
-  @media (min-width: tablet-width) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
     font-size: 36px;
     line-height: 36px;
 
     &::before {
       margin-top: 22px;
+    }
+
+    .field-group--additional & {
+      margin-bottom: 57px;
     }
 
     span {
@@ -59,19 +66,19 @@
   }
 }
 
-.group-field__field {
+.field-group__field {
   clear: both;
   width: 100%;
 }
 
-.group-field__list {
+.field-group__list {
   padding: 0;
   margin: 0;
   clear: both;
   list-style: none;
 }
 
-.group-field__list--contacts {
+.field-group__list--contacts {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -79,20 +86,21 @@
   }
 }
 
-.group-field__list--additional {
+.field-group__list--additional {
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    column-gap: 60px;
     row-gap: 32px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 }
 
-.group-field__item {
+.field-group__item {
   & + & {
     margin-top: 14px;
 
@@ -108,10 +116,16 @@
       }
     }
 
-    @media (min-width: desktop-width) {
+    @media (min-width: $desktop-width) {
       .group-field__list--contacts & {
         margin-top: 0;
       }
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    .field-group__list--additional & + & {
+      margin-top: 12px;
     }
   }
 }

@@ -1,9 +1,9 @@
 .page-footer {
-  padding: 20px 0 22px;
+  padding: 31px 0 25px;
   background-color: $color-pale-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 0 58px;
+    padding: 58px 0 50px;
   }
 }
 
@@ -17,7 +17,7 @@
 
 .page-footer__logo {
   @media (max-width: $mobile-width-only) {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 }
 
@@ -29,5 +29,10 @@
 
     border-top: 1px solid $color-other-light-gray;
     border-bottom: 1px solid $color-other-light-gray;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -4px;
+    margin-right: 8px;
   }
 }

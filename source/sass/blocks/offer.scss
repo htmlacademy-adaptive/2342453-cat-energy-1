@@ -3,21 +3,23 @@
   color: $color-white;
   background-color: $color-green;
   background-repeat: no-repeat;
-  background-size: auto cover;
+  background-size: auto, cover;
   background-position: 50% 58px, 50% 50%;
-  background-image: url("../img/background/catbag.jpg"), url("../img/icons/gift.svg");
+  background-image:
+    url("../img/icons/gift.svg"),
+    url("../img/background/catbag.jpg");
 
   font-size: 16px;
   line-height: 20px;
   text-align: center;
 
-  @media (min-width: tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 70px 120px 70px 422px;
     background-position: 77px 50%, 50% 50%;
     text-align: left;
   }
 
-  @media (min-width: desktop-width) {
+  @media (min-width: $desktop-width) {
     padding: 178px 40px 48px;
     background-position: 50% 50px, 50% 50%;
     text-align: center;

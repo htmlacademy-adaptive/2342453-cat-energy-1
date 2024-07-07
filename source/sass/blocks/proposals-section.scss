@@ -1,12 +1,12 @@
-.section-proposals {
+.proposals-section {
   padding-top: 20px;
 
-  @media (min-width: desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 82px;
   }
 }
 
-.section-proposals__container {
+.proposals-section__container {
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -14,17 +14,17 @@
   }
 }
 
-.proposals__item {
+.proposals-section__item {
   position: relative;
-  padding: 24px 20px 20px;
+  padding: 22px 20px 18px;
   background-color: $color-pale-gray;
 
-  @media (min-width: tablet-width) {
-    padding: 77px 31px 52px 52px;
+  @media (min-width: $tablet-width) {
+    padding: 69px 316px 60px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 52px 55px;
+    padding: 47px 52px 62px;
   }
 
   & + & {
@@ -40,14 +40,15 @@
   }
 }
 
-.proposals__title {
+.proposals-section__title {
   position: relative;
   min-height: 50px;
   margin: 0;
   margin-bottom: 22px;
-  padding-left: 68px;
+  padding-left: 72px;
   display: flex;
   align-items: center;
+
   font-family: $font-title;
   font-size: 24px;
   font-weight: 400;
@@ -56,6 +57,7 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+    margin-bottom: 18px;
     padding-left: 0;
     font-size: 36px;
   }
@@ -79,12 +81,13 @@
     left: 0;
     top: 0;
     width: 50px;
+    height: 50px;
 
     background-color: $color-green;
     border-radius: 50%;
 
-    @media (min-width: tablet-width) {
-      top: calc(50% - 100px);
+    @media (min-width: $tablet-width) {
+      top: calc(50% - 95px);
       right: 62px;
       left: auto;
       width: 200px;
@@ -92,7 +95,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: auto;
+      top: calc(50% - 50px);
+      right: auto;
       left: 0;
       width: 100px;
       height: 100px;
@@ -104,7 +108,7 @@
   }
 }
 
-.section-proposals__title--slim {
+.proposals-section__title--slim {
   &::after {
     top: -3px;
     left: 7px;
@@ -114,7 +118,7 @@
     background-image: url("../img/icons/cat-slim.svg");
 
     @media (min-width: $tablet-width) {
-      top: calc(50% - 110px);
+      top: calc(50% - 106px);
       right: 92px;
       left: auto;
       width: 140px;
@@ -130,7 +134,7 @@
   }
 }
 
-.section-proposals__title--pro {
+.proposals-section__title--pro {
   &::after {
     top: 11px;
     left: -10px;
@@ -139,8 +143,8 @@
 
     background-image: url("../img/icons/cat-pro.svg");
 
-    @media (min-width: &tablet-width) {
-      top: calc(50% - 56px);
+    @media (min-width: $tablet-width) {
+      top: calc(50% - 51px);
       right: 28px;
       left: auto;
       width: 268px;
@@ -148,7 +152,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: calc(50% - 22px);
+      top: calc(50% - 30px);
       left: -19px;
       width: 134px;
       height: 56px;
@@ -156,7 +160,7 @@
   }
 }
 
-.proposals__text {
+.proposals-section__text {
   margin: 0;
   margin-bottom: 15px;
   padding-bottom: 23px;
@@ -164,16 +168,17 @@
   border-bottom: 1px solid $color-other-light-gray;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 54px;
+    padding: 0;
     border: none;
   }
 
-  @media (min-width: desktop-width) {
-    margin-bottom: 23px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
-.proposals__link {
+.proposals-section__link {
   display: grid;
   grid-template-columns: max-content 32px;
   align-items: center;
@@ -182,11 +187,13 @@
   color: $color-black;
   font-family: $font-title;
   font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
 
-  @media (min-width: tablet-width) {
+  @media (min-width: $tablet-width) {
+    gap: 27px;
     font-size: 20px;
   }
 
