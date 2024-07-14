@@ -56,7 +56,8 @@
   }
 }
 
-.card__picture {
+.card__picture,
+.card__img {
   grid-area: img;
   align-self: center;
   justify-self: center;

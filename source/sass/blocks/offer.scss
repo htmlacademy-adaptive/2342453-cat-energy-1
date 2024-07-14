@@ -7,22 +7,46 @@
   background-position: 50% 58px, 50% 50%;
   background-image:
     url("../img/icons/gift.svg"),
-    url("../img/background/catbag.jpg");
+    url("../img/background/catbag-small.jpg");
 
   font-size: 16px;
   line-height: 20px;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/icons/gift.svg"),
+      url("../img/background/catbag-small@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 70px 120px 70px 422px;
     background-position: 77px 50%, 50% 50%;
     text-align: left;
+    background-image:
+      url("../img/icons/gift.svg"),
+      url("../img/background/catbag-medium.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/icons/gift.svg"),
+      url("../img/background/catbag-medium@2x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     padding: 178px 40px 48px;
     background-position: 50% 50px, 50% 50%;
     text-align: center;
+    background-image:
+      url("../img/icons/gift.svg"),
+      url("../img/background/promo-large.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image:
+      url("../img/icons/gift.svg"),
+      url("../img/background/promo-large@2x.jpg");
   }
 }
 

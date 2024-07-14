@@ -10,6 +10,13 @@
     background-image:
       url("../img/background/promo-small.jpg"),
       linear-gradient($color-dark-green 0, $color-dark-green 302px, $color-white 302px);
+
+    @media (min-resolution: 2dppx) {
+      background-size: auto 302px, auto;
+      background-image:
+        url("../img/background/promo-small@2x.jpg"),
+        linear-gradient($color-dark-green 0, $color-dark-green 302px, $color-white 302px);
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -35,6 +42,11 @@
       background-position: 0 100%;
       background-repeat: no-repeat;
       background-image: url("../img/background/promo-large.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-size: auto 696px;
+        background-image: url("../img/background/promo-large@2x.jpg");
+      }
     }
   }
 }
@@ -76,9 +88,13 @@
     margin-bottom: 49px;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 51px;
+  }
 }
 
-.promo__picture {
+.promo__image {
   width: 280px;
 
   @media (min-width: $tablet-width) {

@@ -187,7 +187,7 @@
   }
 }
 
-.instance__picture {
+.instance__image {
   display: none;
 
   img {
@@ -206,7 +206,7 @@
   }
 }
 
-.instance__picture--before {
+.instance__image--before {
   @media (min-width: $tablet-width) {
     img {
       margin-left: 0;
@@ -214,12 +214,12 @@
   }
 }
 
-.instance__picture--after {
+.instance__image--after {
   @media (min-width: $tablet-width) {
     justify-content: end;
   }
 }
 
-.instance__picture--active {
+.instance__image--active {
   display: block;
 }
